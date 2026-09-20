@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+        margin: 0;
+    min-width: 320px;
+    background: #2d3137;
+    color:#eef1f6 ;
+    font: 'Open Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.header{
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        position: sticky;
+        top: 0;
+        background-color: rgba(33, 36, 41, 0.72);
+        z-index: 400;
+        gap: 14px;
+}
+
+.svg1{
+width: 20px;
+}
+.svg2{
+    width: 20px;
+
+}
+
+.svg3{
+    width: 20px;
+
+}.svg4{
+    width: 20px;
+
+}
