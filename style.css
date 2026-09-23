@@ -22,13 +22,81 @@ body{
         background-color: rgba(33, 36, 41, 0.72);
         z-index: 400;
         gap: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);;
+}
+.hea{
+    color: #90ff00;
+    font-weight: 900;
+    font-size: 28px;
+    padding: 1px;
+    font-family: system-ui;
+}
+.heae{
+        font-size: 28px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #efededf7;
 }
 
+/* .heae:hover{
+    color: #eef1f6;
+    cursor: pointer;
+} */
+
+
+.searchbar1{
+        /* display: flex; */
+    align-items: center;
+    /* background-color: red; */
+    flex: 1 1 auto;
+    /* position: sticky; */
+    display: flex;
+    justify-content: center;
+}
+.searchbar{
+    flex: content;
+}
+
+
+
+
+.text{
+    width: 50%;
+    height: 40px;
+    /* padding: 4px; */
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    /* max-width: var(--search-max); */
+    height: 40px;
+    margin: 0;
+    background: #b1b6bf;
+    color: white;
+    padding-left: 15px;
+    background: #272b31;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+
+input::placeholder {
+  color: rgba(248, 247, 247, 0.967);       /* Change to any color you like */
+  font-family: sans-serif; /* Optional: style it further */
+}
 .svg1{
-width: 20px;
+    position: absolute;
+    width: 20px;
+    transform: translateX(214px);
+    filter: invert(1);
+
 }
 .svg2{
-    width: 20px;
+    margin-left: 3px;
+    width: 15px;
+    height: 14px;
+    filter: invert(1);
 
 }
 
@@ -37,5 +105,40 @@ width: 20px;
 
 }.svg4{
     width: 20px;
+    /* filter: invert(1); */
 
+}
+.svg5{
+    width: 20px;
+    filter: invert(1);
+
+}
+
+.hdr-action{
+        display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+.catagories{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 12px 0 14px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: #272b31;
+    font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color:  #eef1f6;
+    cursor: pointer;
+}
+
+
+.infinity{
+    background: #b1b4ba9c;
+    border-radius: 26px;
+    height: 34px;
 }
