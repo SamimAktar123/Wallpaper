@@ -156,7 +156,7 @@ input::placeholder {
 
 .nd-header{
 
-    margin-top: 200px;
+    margin-top: 30px;
 
 }
 .heading1{
@@ -209,4 +209,57 @@ input::placeholder {
     font-weight: 600;
     font-size: 25px;
     font-family: system-ui;
+}
+
+.svgg{
+    width: 15px;
+    filter: invert(1);
+}
+
+path{
+    fill:#383d44
+}
+.headeroption{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.headoptionare{
+        display: flex;
+    background: #212429;
+    justify-content: space-between;
+    /* width: 672px; */
+    height: 60px;
+    align-items: center;
+    gap: 4px;
+    padding: 5px;
+    border-radius: 11px;
+}
+.option{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px 21px;
+    /* background: #383d44; */
+    border-radius: 8px;
+     transition: all 0.3s ease; 
+     cursor: pointer;
+}
+.back{
+    background: #383d44;
+
+}
+.option:hover{
+    background: #383d44;
+        /* transform: scale(1.1);  */
+        /* margin: 10px; */
+}
+.text12{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #eef1f6;
 }
