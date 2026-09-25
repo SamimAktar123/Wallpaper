@@ -103,28 +103,30 @@ walpappers(dataofwallpaper);
 let inputFild=document.querySelector(".text");
 inputFild.addEventListener("input",()=>{
 
-    let countskip=false;
    let newUser = dataofwallpaper.filter((user)=>{
-    
-    //    return user.about.startsWith(inputFild.value);
+   
 
       let match = user.about.startsWith(inputFild.value);
     if (match) {
-      countskip = true; // update if any match
+    //   console.log(match);
+    
+
+    }else{
+console.log("kio");
+
     }
     return match;
+
   });
       
          document.getElementById("piclist").innerHTML="";
-          if (countskip) {
-    console.log("jdidi - found");
-  } else {
-    console.log("jdidi - not found");
-  }
 
-       walpappers(newUser)
+         walpappers(newUser)
        
-// console.log(newUser);
+
+
+
+
    });
 
    

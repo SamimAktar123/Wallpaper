@@ -329,3 +329,18 @@ ul li {
     margin-left: -22px;
     background: #90ff00;
   }
+
+
+  .hidden{
+
+  display: initial;
+  }
+
+ .notresult{display: none;}
+
+  .notresult h2{
+    color: #b1b6bf;
+    font-family:  Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
