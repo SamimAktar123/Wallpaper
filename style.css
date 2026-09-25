@@ -220,7 +220,7 @@ input::placeholder {
 }
 
 path{
-    fill:#151516
+    fill:#1f2022
 }
 .headeroption{
         display: flex;
@@ -253,6 +253,7 @@ path{
 }
 .back{
     background: #383d44;
+    overflow: hidden;
 
 }
 .option:hover{
@@ -261,8 +262,70 @@ path{
         /* margin: 10px; */
 }
 .text12{
-    font-size: 17px;
+   font-size: 14px;
     font-family: sans-serif;
     font-weight: 600;
-    color: #eef1f6;
+    color: #eef1f6ab;
 }
+
+.diffierentoption{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.diffoption{
+display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.cats{
+    display: flex;
+    justify-content: space-evenly;
+    width: 77%;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+ul li {
+    display: flex;
+   align-items: center;
+    gap: 15px;
+    padding: 6px 4px;
+    color: #b1b6bf;
+    font-size: 14px;
+    font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    
+  
+}
+
+  ul li span{
+    display: inline-block;
+    height: 10px;
+    background: #827e7e63;
+    font-size: 20px;
+    width: 1px;
+  }
+
+  .greenline{
+    display: inline-block;
+    height: 21px;
+    width: 4px;
+    background: #90ff00;
+    border-radius: 4px;
+    /* padding-right: 4px; */
+    margin-right: 3px;
+  }
+
+.greenline1{
+ width: 4px;
+    border-radius: 10px;
+    height: 18px;
+    /* margin-right: -159px; */
+    margin-left: -22px;
+    background: #90ff00;
+  }

@@ -84,7 +84,9 @@ const dataofwallpaper=[
 
 let contenair=document.getElementById("piclist");
 
-dataofwallpaper.forEach((data)=>{
+function walpappers(arr){
+    
+    arr.forEach((data)=>{
 
     let div=document.createElement("div");
     div.className="contenerdiv";
@@ -94,4 +96,36 @@ dataofwallpaper.forEach((data)=>{
         contenair.appendChild(div);
 
 
-})
+})};
+walpappers(dataofwallpaper);
+
+
+let inputFild=document.querySelector(".text");
+inputFild.addEventListener("input",()=>{
+
+    let countskip=false;
+   let newUser = dataofwallpaper.filter((user)=>{
+    
+    //    return user.about.startsWith(inputFild.value);
+
+      let match = user.about.startsWith(inputFild.value);
+    if (match) {
+      countskip = true; // update if any match
+    }
+    return match;
+  });
+      
+         document.getElementById("piclist").innerHTML="";
+          if (countskip) {
+    console.log("jdidi - found");
+  } else {
+    console.log("jdidi - not found");
+  }
+
+       walpappers(newUser)
+       
+// console.log(newUser);
+   });
+
+   
+
