@@ -5,19 +5,19 @@ const dataofwallpaper=[
     },
     {
         Imageurl:"https://4kwallpapers.com/images/walls/thumbs_2t/27244.jpg",
-        about:"Xiaomi 18 Fold"
+        about:"Avenger Endgame"
     },
     {
         Imageurl:"https://4kwallpapers.com/images/walls/thumbs_2t/27240.png",
-        about:"Xiaomi 18 Fold"
+        about:"Brough Superior"
     },
     {
         Imageurl:"https://4kwallpapers.com/images/walls/thumbs_2t/27223.jpg",
-        about:"Xiaomi 18 Fold"
+        about:"McLaren McL 6GT,12k,2026,Supercar"
     },
     {
         Imageurl:"https://4kwallpapers.com/images/walls/thumbs_2t/27177.jpg",
-        about:"Xiaomi 18 Fold"
+        about:"Ichigo Kurosaki"
     },
     {
         Imageurl:"https://4kwallpapers.com/images/walls/thumbs_2t/27257.jpg",
@@ -106,23 +106,25 @@ inputFild.addEventListener("input",()=>{
    let newUser = dataofwallpaper.filter((user)=>{
    
 
-      let match = user.about.startsWith(inputFild.value);
-    if (match) {
-    //   console.log(match);
+       let match = user.about.toLowerCase().startsWith(inputFild.value.toLowerCase());
     
-
-    }else{
-console.log("kio");
-
-    }
     return match;
 
   });
       
          document.getElementById("piclist").innerHTML="";
 
-         walpappers(newUser)
-       
+         if (newUser.length === 0) {
+    // show "No result found" message
+    let msg = document.createElement("div");
+    msg.className = "noresult";
+    msg.textContent = "No result found";
+    
+    contenair.appendChild(msg);
+  } else {
+    // show matching wallpapers
+    walpappers(newUser);
+  }
 
 
 
